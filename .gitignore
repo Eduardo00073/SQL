@@ -1,0 +1,10 @@
+# Temporary files & DB exports
+*.tmp
+*.log
+*.bak
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

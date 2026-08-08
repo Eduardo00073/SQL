@@ -1,54 +1,68 @@
 <h1 align="center">💾 SQL — Scripts e Estudos de Banco de Dados</h1>
 
 <p align="center">
-Repositório com scripts SQL desenvolvidos do nível básico ao avançado, cobrindo modelagem, criação de estruturas, relacionamentos e manipulação de dados em diferentes cenários.
+Repositório com scripts SQL desenvolvidos do nível básico ao avançado, cobrindo DDL, DML, modelagem relacional e projetos em variados SGBDs.
 </p>
 
 ---
 
 ## 📖 Sobre o repositório
 
-Este repositório reúne exercícios e projetos práticos de **SQL / T-SQL**, incluindo criação de bancos de dados relacionais, modelagem de tabelas, chaves estrangeiras, inserção de dados e scripts de manutenção estrutural. Os scripts foram desenvolvidos como parte do meu processo de estudo contínuo em banco de dados.
+Este repositório reúne exercícios e projetos práticos de **SQL / T-SQL / PostgreSQL**, incluindo criação de bancos de dados relacionais, modelagem de tabelas, chaves estrangeiras, povoamento de dados (seeding) e projetos de estudo prático.
 
-## 🗂️ Estrutura do repositório
+---
 
-| Arquivo | Descrição |
-|---|---|
-| `Script-Criacao-Tabelas.sql` | Criação das tabelas principais de um sistema acadêmico: Alunos, Cursos, Turmas, Situação e Registro de Presença |
-| `Script-FKs.sql` | Definição das chaves estrangeiras (relacionamentos) entre as tabelas |
-| `Script-AlteracaoEstrutural(Alunos_Turmas...).sql` | Scripts de alteração estrutural (ALTER TABLE) das tabelas de Alunos e Turmas |
-| `Script-GeradorTabelas(SQLEXEMPLOS...).sql` | Script gerador de tabelas de exemplo |
-| `Script-InsertAlunos.sql` | Inserção de dados de exemplo na tabela de Alunos |
-| `Script-InsertAlunos_Turmas.sql` | Inserção de dados relacionando Alunos e Turmas |
-| `Script-InsertCursos.sql` | Inserção de dados de exemplo na tabela de Cursos |
-| `Script-InsertSituacao.sql` | Inserção de dados de exemplo na tabela de Situação |
-| `Script-InsertTabelas(SQLEXEMPLOS).sql` | Inserção de dados de exemplo em tabelas diversas |
-| `Script-InsertTurmas.sql` | Inserção de dados de exemplo na tabela de Turmas |
-| `ScriptLojaDeRoupa.sql` | Modelagem e consultas de um banco de dados de exemplo para uma loja de roupas |
-| `PostgreSQL/` | Exercício de treinamento em PostgreSQL: banco de dados de uma locadora de veículos |
+## 🗂️ Estrutura do Repositório
 
-## 🧩 Modelo de dados (sistema acadêmico)
+```
+.
+├── 01-postgresql/
+│   └── locadora_veiculos.sql                     # Modelagem e consultas para locadora de veículos
+├── 02-exemplos-e-estruturas/
+│   ├── Script-Criacao-Tabelas.sql                # DDL: Tabelas do sistema acadêmico
+│   ├── Script-FKs.sql                            # Relacionamentos e chaves estrangeiras
+│   ├── Script-AlteracaoEstrutural(Alunos_Turmas).sql
+│   ├── Script-GeradorTabelas(SQLEXEMPLOS).sql
+│   └── Script-InsertTabelas(SQLEXEMPLOS).sql
+├── 03-dados-e-seeding/                           # Scripts DML de inserção de dados
+│   ├── Script-InsertAlunos.sql
+│   ├── Script-InsertAlunos_Turmas.sql
+│   ├── Script-InsertCursos.sql
+│   ├── Script-InsertSituacao.sql
+│   └── Script-InsertTurmas.sql
+└── 04-projetos-praticos/
+    └── ScriptLojaDeRoupa.sql                     # Modelagem comercial de loja de roupas
+```
 
-Os principais scripts giram em torno de um sistema de gestão acadêmica, com as tabelas:
+---
 
-- **Alunos** — dados cadastrais dos estudantes
-- **Cursos** — cursos oferecidos
-- **Turmas** — vínculo entre alunos, cursos, valores e datas
-- **Situacao** — situação/status do aluno
-- **Registro_Presenca** — controle de frequência/presença
+## 🧩 Modelo de Dados (Sistema Acadêmico)
+
+Os principais scripts giram em torno de um sistema de gestão acadêmica com as seguintes tabelas:
+
+- **Alunos**: Dados cadastrais dos estudantes.
+- **Cursos**: Cursos oferecidos.
+- **Turmas**: Vínculo entre alunos, cursos, valores e datas.
+- **Situacao**: Status acadêmico do aluno.
+- **Registro_Presenca**: Controle de frequência e aulas.
+
+---
 
 ## 🛠️ Tecnologias
 
 <p align="center">
-<img src="https://img.shields.io/badge/T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
 </p>
 
-## ▶️ Como usar
+---
 
-1. Escolha o script de acordo com o banco de dados (T-SQL/SQL Server na raiz, PostgreSQL na pasta `PostgreSQL/`).
-2. Execute primeiro os scripts de criação de tabelas e chaves estrangeiras, depois os scripts de inserção de dados.
-3. Ajuste nomes de banco/schema conforme o seu ambiente.
+## ▶️ Como Utilizar
+
+1. **Criação da Estrutura**: Execute primeiramente os scripts da pasta `02-exemplos-e-estruturas/` (criação de tabelas e chaves estrangeiras).
+2. **População do Banco**: Em seguida, rode os scripts da pasta `03-dados-e-seeding/` para popular o banco de dados.
+3. **Estudos Avançados**: Explore as pastas `01-postgresql/` e `04-projetos-praticos/` para ver modelagens em diferentes contextos de mercado.
 
 ---
 
