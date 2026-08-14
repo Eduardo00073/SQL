@@ -67,3 +67,15 @@ Os scripts dos módulos 01 e 02 compõem um sistema de gestão acadêmica com as
 ---
 
 <p align="center"><i>Material didático desenvolvido como Professor de Programação, Informática e Robótica.</i></p>
+
+---
+
+## ⭐ Gostou do projeto?
+
+Se este repositório te ajudou, deixe uma estrela — isso ajuda outras pessoas a encontrarem o material.
+
+### 🔗 Outros projetos relacionados
+
+📚 [Books API](https://github.com/Eduardo00073/books-api) — API REST em Spring Boot com JWT para gestão de livros.
+
+🐘 [PHP do Console à API](https://github.com/Eduardo00073/php-do-console-a-api) — trilha completa de PHP, do básico a APIs RESTful.
